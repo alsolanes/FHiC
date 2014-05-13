@@ -1,0 +1,110 @@
+img1 {
+	display: block;
+	margin: auto;
+}
+p {
+	text-align: center;
+	font-family: Garamond, serif;
+	font-size: 18px;
+}
+#profile{
+	margin-right:0px;
+    text-align:center;
+	font-size: 10px;
+}
+#log{
+	margin-right:0px;
+    text-align:center;
+	font-weight:bold;
+	font-size: 10px;
+}
+#tabla1{
+   background-color:#BCD2EE;
+    height: 110px;
+    width:620px;
+    border-color:black;
+    border-style:solid;
+    border-width:3px;
+    border-radius:20px;
+	margin-top:50px;
+    margin-left:auto;
+	margin-right:auto;
+    text-align:center;
+}
+#tabla2{
+    padding-bottom:25px;
+    padding-right:50px;
+    padding-left:50px;
+    height: 200px;
+    width:250px;
+    border-color:black;
+    background-color:#BCD2EE;
+    border-style:solid;
+    border-width:3px;
+    border-radius:5px;
+	margin-top:50px;
+    margin-left:auto;
+	margin-right:auto;
+    text-align:center;
+}
+#tabla3{
+   background-color:#BCD2EE;
+    height: 75px;
+    width:190px;
+    border-color:black;
+    border-style:solid;
+    border-width:3px;
+    border-radius:20px;
+	margin-top:50px;
+    margin-left:5%;
+	margin-right:auto;
+    text-align:center;
+	padding-top:35px;
+	float:left;
+}
+#tabla4{
+    padding-bottom:25px;
+    padding-right:50px;
+    padding-left:50px;
+    height: 100px;
+    width:250px;
+    border-color:black;
+    background-color:#BCD2EE;
+    border-style:solid;
+    border-width:3px;
+    border-radius:5px;
+	margin-top:50px;
+    margin-left:auto;
+	margin-right:auto;
+    text-align:center;
+}
+#icons{
+    height: 50px;
+    width:130px;
+	margin-top:50px;
+    margin-left:5%;
+	margin-right:auto;
+	float:left;
+}
+#textIcons{
+	clear:both;
+    text-align:center;
+	font-weight:bold;
+	font-size: 20px;
+}
+a{
+    /*text-decoration:none;
+    color:red;*/
+    font-family:Verdana;
+    font-size:12px;
+	margin-left:20px;
+    font-weight: normal;
+}
+
+form {
+  float:left;
+  text-align:left;
+  font-weight: bold;
+}
+/*Start adding your CSS below!*/
+

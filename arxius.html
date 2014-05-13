@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html >
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		
+		<style type="text/css">
+			
+			.example {
+				float: left;
+				margin: 15px;
+			}
+			
+			.demo {
+				width: 200px;
+				height: 400px;
+				border-top: solid 1px #BBB;
+				border-left: solid 1px #BBB;
+				border-bottom: solid 1px #FFF;
+				border-right: solid 1px #FFF;
+				background: #FFF;
+				overflow: scroll;
+				padding: 5px;
+			}
+			
+		</style>
+		<script>
+			var user = localStorage.getItem('user');
+		</script>
+		<link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
+		<title>StudentsNet - Arxius</title>
+		<link href="css/stylesheet.css" rel="stylesheet">
+		<script src="js/jquery-1.9.1.js" type="text/javascript"></script>
+		<script src="js/jquery-ui.js" type="text/javascript"></script>
+		
+		<script src="js/jqueryFileTree.js" type="text/javascript"></script>
+		<link href="css/jqueryFileTree.css" rel="stylesheet" type="text/css" media="screen" />
+
+		<script type="text/javascript">
+			
+			$(document).ready( function() {
+				
+				$('#fileTreeDemo_1').fileTree({ 
+					root: '/', 
+					script: 'connectors/jqueryFileTree.php' }, 
+					function(file) { 
+						alert(file);
+				});
+				
+				$('#fileTreeDemo_2').fileTree({ root: '../../demo/', script: 'connectors/jqueryFileTree.php', folderEvent: 'click', expandSpeed: 750, collapseSpeed: 750, multiFolder: false }, function(file) { 
+					alert(file);
+				});
+				
+				$('#fileTreeDemo_3').fileTree({ root: '../../demo/', script: 'connectors/jqueryFileTree.php', folderEvent: 'click', expandSpeed: 750, collapseSpeed: 750, expandEasing: 'easeOutBounce', collapseEasing: 'easeOutBounce', loadMessage: 'Un momento...' }, function(file) { 
+					alert(file);
+				});
+				
+				$('#fileTreeDemo_4').fileTree({ root: '../../demo/', script: 'connectors/jqueryFileTree.php', folderEvent: 'dblclick', expandSpeed: 1, collapseSpeed: 1 }, function(file) { 
+					alert(file);
+				});
+				
+			});
+		</script>
+	</head>
+	<body>
+		
+		<div class="wrapper">
+
+			<header class="header">
+
+				<div id=profile>Benvingut <a id=profile href="profile.html" title="Mostra el perfil">
+				<script>
+				    document.write(user);
+				</script></a> <a id=profile href="index.html">(Sortida)</a>
+				</div>
+				<div id=tabla3>
+						<img src="images/titol.png" WIDTH=180 HEIGHT=30/>
+				</div> 
+				<div id=icons>
+						<A HREF="cursos.html"><img src="images/icono-cursos.jpg" WIDTH=120 HEIGHT=120/></A>
+						<div id=textIcons><A HREF="cursos.html">Cursos</A></div>
+				</div>
+				<div id=icons>
+						<A HREF="forum.html"><img src="images/icono-forum.jpg" WIDTH=120 HEIGHT=120/></A>
+						<div id=textIcons><A HREF="forum.html">Forum</A></div>
+				</div>
+				<div id=icons>
+						<img src="images/icono-arxius.jpg" WIDTH=120 HEIGHT=120/>
+						<div id=textIcons>Arxius</div>
+				</div>
+				<div id=icons>
+						<img src="images/icono-mail.gif" WIDTH=120 HEIGHT=120/>
+						<div id=textIcons>Correu</div>
+				</div>
+			</header><!-- .header-->
+
+			<div class="middle">
+
+				<div class="container">
+					<main class="titol">
+					<div class="example">
+						<h2>Default options</h2>
+						<div id="fileTreeDemo_1" class="demo"></div>
+					</div>
+					</main>
+				</div><!-- .container-->
+				<aside class="left-sidebar">
+					<iframe src="https://www.google.com/calendar/embed?title=El%20teu%20horari&amp;showTz=0&amp;height=200&amp;wkst=2&amp;hl=ca&amp;bgcolor=%23FFFFFF&amp;src=ri2sidi4l53dca91vlpv3trdco%40group.calendar.google.com&amp;color=%23B1440E&amp;ctz=Europe%2FMadrid" style=" border:solid 1px #777 " width="200px" height="200px" frameborder="2" scrolling="no" margin-left:"20px";></iframe>
+				</aside><!-- .left-sidebar -->
+			</div>
+		</div><!-- .wrapper -->
+ 	</body>
+</html>

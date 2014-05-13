@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script>
+		var user = localStorage.getItem('user');
+	</script>
+	
+	<title>Cursos</title>
+
+	<link href="css/stylesheet.css" rel="stylesheet">
+	<script src="js/jquery-1.9.1.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script>
+		$(function () {
+			$.datepicker.setDefaults($.datepicker.regional["es"]);
+				$("#datepicker").datepicker({
+				firstDay: 1
+				});
+			$( "#accordion" ).accordion({event: "mouseover"});
+		});
+	</script>	
+</head>
+
+<body>
+
+<div class="wrapper">
+
+	<header class="header">
+
+		<div id=profile>Benvingut <a id=profile href="profile.html" title="Mostra el perfil">
+		<script>
+		    document.write(user);
+		</script></a> <a id=profile href="index.html">(Sortida)</a>
+		</div>
+		<div id=tabla3>
+				<img src="images/titol.png" WIDTH=180 HEIGHT=30/>
+		</div> 
+		<div id=icons>
+				<img src="images/icono-cursos.jpg" WIDTH=120 HEIGHT=120/>
+				<div id=textIcons>Cursos</div>
+		</div>
+		<div id=icons>
+				<A HREF="forum.html"><img src="images/icono-forum.jpg" WIDTH=120 HEIGHT=120/></A>
+				<div id=textIcons><A HREF="forum.html">Forum</A></div>
+		</div>
+		<div id=icons>
+				<A HREF="arxius.html"><img src="images/icono-arxius.jpg" WIDTH=120 HEIGHT=120/></A>
+				<div id=textIcons><A HREF="arxius.html">Arxius</A></div>
+		</div>
+		<div id=icons>
+				<img src="images/icono-mail.gif" WIDTH=120 HEIGHT=120/>
+				<div id=textIcons>Correu</div>
+		</div>
+
+	</header><!-- .header-->
+
+	<div class="middle">
+
+		<div class="container">
+			<main class="titol">
+				<div id="accordion">
+				  <h3><A HREF="c-fh.html">Factors Humans i Computació </A> </h3> 
+				  <div>
+				  	<p>
+					<img src="images/fletxa.jpg" WIDTH=12 HEIGHT=12/>
+					Entrega P4 en 10 dies!
+					</p>
+				  </div>
+				  <h3><A HREF="c-bd.html">Bases de Dades</A></h3>
+				  <div>
+					<p class="notificacions">
+					<img src="images/fletxa.jpg" WIDTH=12 HEIGHT=12/>Nova entrada al fòrum de pràctiques!
+					</p>
+					<p class="notificacions">
+					<img src="images/fletxa.jpg" WIDTH=12 HEIGHT=12/>Entrega P3 en 5 dies!
+					</p>
+				  </div>
+				  <h3><A HREF="c-xarxes.html">Xarxes</A></h3>
+				 <div>
+				  </div>
+				  <h3><A HREF="c-lil.html">Lògica i Llenguatges</A></h3>
+				  <!--<div>
+					<p>
+					Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+					et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+					faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+					mauris vel est.
+					</p>
+					<p>
+					Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+					Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+					inceptos himenaeos.
+					</p>
+				  </div>-->
+				</div>
+
+
+
+			</main><!-- .content -->
+		</div><!-- .container-->
+
+		<aside class="left-sidebar">
+		<!--<div id="datepicker"></div>-->
+		<iframe src="https://www.google.com/calendar/embed?title=El%20teu%20horari&amp;showTz=0&amp;height=200&amp;wkst=2&amp;hl=ca&amp;bgcolor=%23FFFFFF&amp;src=ri2sidi4l53dca91vlpv3trdco%40group.calendar.google.com&amp;color=%23B1440E&amp;ctz=Europe%2FMadrid" style=" border:solid 1px #777 " width="200px" height="200px" frameborder="2" scrolling="no" margin-left:"20px";></iframe>
+		</aside><!-- .left-sidebar -->
+
+	</div><!-- .middle-->
+
+</div><!-- .wrapper -->
+
+<footer class="footer">
+	<strong>Footer:</strong> Mus elit Morbi mus enim lacus at quis Nam eget morbi. Et semper urna urna non at cursus dolor vestibulum neque enim. Tellus interdum at laoreet laoreet lacinia lacinia sed Quisque justo quis. Hendrerit scelerisque lorem elit orci tempor tincidunt enim Phasellus dignissim tincidunt. Nunc vel et Sed nisl Vestibulum odio montes Aliquam volutpat pellentesque. Ut pede sagittis et quis nunc gravida porttitor ligula.
+</footer><!-- .footer -->
+
+</body>
+</html>

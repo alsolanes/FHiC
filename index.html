@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--<script language="javascript" type="text/javascript">-->
+		<script language="javascript" type="text/javascript">
+			function sendData(){
+				localStorage.setItem('user', document.getElementById('usuari').value);
+				window.location = "cursos.html";								
+			}
+		</script>
+		<link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
+		<title>StudentsNet</title>
+	</head>
+	<body>
+		<div id=tabla1>
+				<img src="images/titol.png" WIDTH=600 HEIGHT=100/>
+		</div> 
+		<div id=tabla2>
+			<h2>Login</h2>
+			<form action="" method="post" enctype="text/plain">
+ 			Nom d'usuari o correu electronic:<br>
+ 			<input type="text" id="usuari" name="usuari" size="35"><br>
+ 			Password:<br>
+ 			<input type="password" id="contrasenya" name="contrasenya" size="35" href="cursos.html" ><br>
+ 			<br>
+ 			<input type="button" value="Enviar" onclick="sendData();">
+ 			<!--"window.location='cursos.html'"-->
+			<a href="password.html">Recordar contrasenya</a>
+ 		</form>
+		</div>
+ 	</body>
+</html>
